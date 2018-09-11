@@ -114,3 +114,8 @@ variable "private_ssh_port" {
   description = "Set the SSH port to use between the bastion and private instance"
   default     = 22
 }
+
+variable "bastion_type" {
+  description = "Identifies bastion type. Accepted values 'interactive' or 'proxy'"
+  default     = "interactive"
+}

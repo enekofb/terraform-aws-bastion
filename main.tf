@@ -1,5 +1,5 @@
 data "template_file" "user_data" {
-  template = "${file("${path.module}/user_data.sh")}"
+  template = "${file("${path.module}/user_data_${var.bastion_type}.sh")}"
 
   vars {
     aws_region  = "${var.region}"
